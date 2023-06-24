@@ -1,0 +1,81 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  margin-top: 300px;
+  border: 1px solid gray;
+  width: 800px;
+  height: 600px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.add {
+  width: 800px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.date, .passed {
+  height: 30px;
+  font-size: 13px;
+  border-radius: 0;
+  border: 1px solid gainsboro;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.date:focus-visible, .passed:focus-visible {
+  outline: none;
+}
+
+.date:focus, .passed:focus {
+  border-radius: 0;
+  border: 1px solid gray;
+}
+
+.btn {
+  height: 34px;
+  width: 45px;
+  background-color: white;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 1px solid gray;
+}
+
+.list {
+  width: 800px;
+  height: 500px;
+  overflow: auto;
+  box-sizing: border-box;
+  border: 1px solid gainsboro;
+}
+
+.listItem {
+  width: 90%;
+  height: 40px;
+  border: 1px solid gainsboro;
+  margin: 5px auto 0 auto;
+  display: flex;
+}
+
+.item {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete {
+  cursor: pointer;
+}
